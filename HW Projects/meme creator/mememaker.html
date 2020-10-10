@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="meme.css">
+    <title>Meme Maker</title>
+</head>
+<body>
+    <h1>
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+    <br>
+    <span class="letter">T</span>
+    <span class="letter">I</span>
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+    </h1>
+        <form action="" id="Maker">
+            <p>
+                <label>Top Text</label><br>
+                <input type="text" id="toptext" name="toptext" placeholder="Mr. Muffins" maxlength="25"></input>
+                Text size: <input type="range" name="topsize" min="20" max="30">
+                <label for="">Choose a color: 
+                    <input type="color" name="topcolor">  
+                  </label>
+            </p>
+            <p>
+                <label>Bottom Text</label><br>
+                <input type="text" id="bottomtext" name="bottomtext" placeholder="Is a professional camel herder" maxlength="50"></input>
+                Text size: <input type="range" name="bottomsize" min="20" max="30">
+                <label for="">Choose a color: 
+                    <input type="color" name="bottomcolor">  
+                  </label>
+            </p>
+            <p>
+                <br>
+                <label>Choose image url</label><br>
+                <input type="text" name="url">
+            </p>
+            <p>
+                <button id="submit">Make my meme</button>
+            </p>
+        </form>
+        <section id="results">
+            <ul id="more">
+            </ul>
+        </section>
+
+<script src="meme.js"></script>
+</body>
+</html>
+
+<!-- <div class="container">
+      <img src="img_snow_wide.jpg" alt="Snow" 
+      style="width:100%;">
+      <div class="bottom-left">Bottom Left</div> -->
