@@ -40,7 +40,7 @@ let mySet = new Set(arr);
 //shorter arrow fucntion version
 
 let hasDup = arr => new Set(arr).size !== arr.length; 
-//their version
+//SB Version
 
 
 
