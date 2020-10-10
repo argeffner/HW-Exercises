@@ -1,0 +1,125 @@
+hr {
+    margin: 30px;
+}
+/* Mock 1 */
+
+.button {
+    padding: 15px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: whitesmoke;
+    background-color: lightskyblue;
+    border: 1px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+  justify-content: center;
+}
+.button:active {
+    background-color: darkblue;
+    transform: scale(1.05);
+    border-radius: 25px; 
+
+}
+button:hover {
+    background-color: rgb(84, 161, 224);
+}
+
+
+/* Mock 2 */
+.image {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=980:*");
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.postcard { 
+    width: 30% border 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black; 
+    margin: 10% 35%;
+
+}
+.Title {
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  .Des1 {
+    padding: 15px;
+    background-color: gray;
+    border-top: 1px solid rgb(95, 93, 93);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+  }
+  
+
+  /* Mock 3 */
+
+  .Borders { 
+      display: flex;
+      justify-content: space-around;
+
+  }
+
+  .Border {
+      width:  250px;
+      height: 250px;
+      position: relative;
+      border: 5px solid salmon;
+      background-color: salmon; 
+      border-radius: 5px;
+      overflow: hidden;
+      
+  }
+
+  .Border:hover  .Surprise {
+      top: 0;
+  }
+  .img1 {
+      background-image: url("https://media1.giphy.com/media/5ev3alRsskWA0/giphy.gif?cid=ecf05e47i76ynq1hcjvprm6ancrfsu7zin6k3pl15a1s2cvi&rid=giphy.gif");
+      
+  }
+
+  .img2 {
+      background-image: url("https://media2.giphy.com/media/S99cgkURVO62qemEKM/giphy.gif?cid=ecf05e47s5yi8a2bxotte820qbmfqe7abqavultlpewqc6vs&rid=giphy.gif");
+     
+  }
+
+  .img3 { 
+      background-image: url("https://media3.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif?cid=ecf05e470n0uvlrnj8o0n2hgvml0bwuhqnqq38xn7bi5y8zq&rid=giphy.gif");
+  
+  }
+
+  .img-cont {
+      width:  100%;
+      Height: 100%;
+      Background-position: center;
+      Background-size: cover;
+      Border-radius: 5px;
+  }
+
+    .Surprise {
+    width:  100%;
+    Height: 100%;
+    top: 250px;
+    transition: top 2s;
+    background-color: rgb(151, 146, 146,0.5);
+    /* opacity: 0.5; */
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    justify-content: Center;
+    }
