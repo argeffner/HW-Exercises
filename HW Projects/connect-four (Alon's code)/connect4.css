@@ -1,0 +1,66 @@
+/* game board table */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url("https://cdnb.artstation.com/p/assets/images/images/028/853/683/large/nicholas-cole-jordan-flgtz-rickmorty-panorama-watermarked.jpg?1595716690");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-size: cover;
+  z-index:-1;
+}
+
+.header {
+  margin-top: -25px;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  color: rgb(32, 231, 14);
+  font-size: 15px;
+}
+
+#board td {
+  background-position: center; 
+  width: 90px;
+  height: 90px;
+  border: solid 5px rgb(212, 16, 186);
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+ border-radius: 50%; /* TODO: make into circles */
+  margin: 5px;
+  width: 90%;
+  height: 100%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+  background-image: url("https://media1.giphy.com/media/IgpAALi5hEv1IFmCrZ/giphy.gif?cid=ecf05e47b7bu86i8j9xzn61ccuelek52jcyni635ygzymypg&rid=giphy.gif");
+  background-size: 125px;
+  background-position: center;
+}
+/* column-top is table row of clickable areas for each column */
+.piece.p2 {
+  background-image: url("https://media1.giphy.com/media/W35DnRbN4oDHIAApdk/giphy.gif?cid=ecf05e47ry1yf7t25hw9nodo2z6gweig9qpyy08ris9g0tqd&rid=giphy.gif");
+  background-size: 100px;
+  background-position: center;
+}
+
+#column-top td {
+  border: dashed 1px lightgray;
+  opacity: 0.6;
+}
+
+#column-top td:hover {
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/82596991700046012/58D1ECF47BCE80C3027E0BB32418AAC821038D56/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#btn {
+color: darkorange;
+background-color: aqua;
+}
