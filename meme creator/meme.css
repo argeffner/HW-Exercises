@@ -1,0 +1,115 @@
+h1{
+  font-style: oblique;
+  color: rgb(128, 109, 0);
+  text-align: center;
+}
+.letter {
+  transition: color 3000ms;
+}
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+#toptext {
+  width: 500px;
+  height: 15px;
+}
+#bottomtext {
+  width: 500px;
+  height: 15px;
+}
+input::placeholder {
+top: 12em;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+#results {
+  position: relative;
+  text-align: center;
+}
+
+input[type="color"] {
+	opacity: 40;
+	display: ruby-base-container;
+	width: 25px;
+	height: 25px;
+  border: none;}
+  
+
+ul{
+  list-style:none;
+}
+
+#newList {
+margin-top: 25px;
+margin-bottom: 25px;
+position: relative;
+}
+
+img {
+  border-radius: 5%;
+  position: absolute;
+  right: 30%;
+  z-index:-1;
+}
+
+/*  */
+#rid {
+  transform: translate(-450%, -25%);
+  z-index: 2;
+  color: #fff ;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #950da7;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+#rid:hover {
+  z-index: 2;
+  color: #ffffff ;
+  background: #f6b93b;
+  border-color: #f6b93b ;
+  transition: all 0.4s ease 0s;
+}
+  
+
+#toppy {
+  position: relative;
+  margin-top: -0.5rem;
+  left: 54.5%;
+  transform: translate(-50%, -50%);
+}
+
+#botty {
+  position: relative;
+  margin-top: 16rem; 
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+    background: linear-gradient(-75deg, #df584e, #d831d0, #2394d5, #23d54f);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+

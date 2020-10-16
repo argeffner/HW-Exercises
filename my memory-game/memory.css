@@ -1,0 +1,65 @@
+html {
+    min-height: 100vh;
+}
+body {
+    background: radial-gradient(rgb(0, 255, 191),#bd9c08);
+  }
+
+  .title {
+      color: gold;
+      font-family: fantasy;
+      text-align: center;
+      font-size: 4em;
+  }
+  .game-container{
+    display: grid; 
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    margin: 50px;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+ }
+ .gic{
+    grid-column:1/-1;
+    display: flex;
+    justify-content: space-between;
+ }
+  .game-info {
+    color: white;
+    font-family: fantasy;
+    font-size: 2em;
+    text-align: center;
+  }
+  .card{
+      /* background-color: teal; */
+      height:150px;
+      width: 125px;
+      border-radius: 5%;
+      transform: scale(1);
+      transform-style: preserve-3d;
+      transition: 500ms;
+  }
+    .card:active{
+    transform: scale(1.10);
+    transition: transform 200ms;
+  }   
+   .card.flip{
+      transform: rotateY(180deg);
+  } 
+
+  .front-face{
+    transform: rotateY(180deg);
+  }
+  .back-face,
+  .front-face{
+    display: flex;
+    position: absolute;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 100ms ease-in-out;
+    backface-visibility: hidden;
+    } 
