@@ -5,6 +5,33 @@
  * board fills (tie)
  */
 
+function randBack(){
+ 
+  let theImg = ["https://64.media.tumblr.com/3cc3d7431a42ce4b496f471432681f74/tumblr_nwr0qc8z3D1tc28zvo4_1280.png", 
+                "https://wallpapercave.com/wp/wp1822725.png",
+                "https://wallpapercave.com/wp/wp1822726.jpg",
+                "https://wallpapercave.com/wp/wp1822748.jpg",
+                "https://wallpapercave.com/wp/wp1822754.jpg",
+                "https://wallpapercave.com/wp/wp1822783.jpg",
+                "https://wallpapercave.com/wp/wp1822806.png",
+                "https://wallpapercave.com/wp/wp1822807.jpg",
+                "https://wallpapercave.com/wp/wp1822808.png",
+                "https://wallpapercave.com/wp/wp1822809.jpg",
+                "https://wallpapercave.com/wp/wp1822763.jpg",
+	              "https://cdnb.artstation.com/p/assets/images/images/028/853/683/large/nicholas-cole-jordan-flgtz-rickmorty-panorama-watermarked.jpg?1595716690",
+                "https://i.imgur.com/EMzXEH7.jpg",
+                "https://64.media.tumblr.com/e2aa898df2f0e45f4d0a25745153d11a/tumblr_nwr0qc8z3D1tc28zvo2_1280.png",
+                "https://64.media.tumblr.com/177a02310dd44a25c55c5e26f903a241/tumblr_nwr0qc8z3D1tc28zvo5_1280.png",
+                "https://64.media.tumblr.com/10b505fa86ab1639bcb71f6f6273d682/tumblr_nwr0qc8z3D1tc28zvo6_1280.png",
+                "https://64.media.tumblr.com/26651b1b881080e89a252e323c0dfbc9/tumblr_nwr0u40gkn1tc28zvo6_1280.png",
+                "https://64.media.tumblr.com/75eecce50025259c67b2af145530012c/tumblr_nwr0u40gkn1tc28zvo3_1280.png",
+                "https://64.media.tumblr.com/2d38cbef152cf299bbbed1d1e2f918a2/tumblr_nwr0qc8z3D1tc28zvo1_1280.png"  
+              ];
+
+ let x = Math.floor(Math.random() * theImg.length);
+ document.body.style.backgroundImage = 'url('+theImg[x]+')';
+  } 
+
 const WIDTH = 7;
 const HEIGHT = 6;
 
@@ -178,9 +205,9 @@ function checkForWin() {
   }
 
 }
-let btn = document.getElementById("btn").onclick = function() { 
-  deleteTime(); 
-  location.reload(); // using the reload instead of the emptying using deleteTime
+  document.getElementById("btn").onclick = function() { 
+  location.reload(); 
 } 
+randBack();
 makeBoard();
 makeHtmlBoard();

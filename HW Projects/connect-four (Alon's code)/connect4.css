@@ -17,6 +17,7 @@ body {
   text-align: center;
   color: rgb(32, 231, 14);
   font-size: 15px;
+  -webkit-text-stroke: 2px black
 }
 
 #board td {
@@ -38,7 +39,7 @@ body {
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 .piece.p1 {
   background-image: url("https://media1.giphy.com/media/IgpAALi5hEv1IFmCrZ/giphy.gif?cid=ecf05e47b7bu86i8j9xzn61ccuelek52jcyni635ygzymypg&rid=giphy.gif");
-  background-size: 125px;
+  background-size: 100px;
   background-position: center;
 }
 /* column-top is table row of clickable areas for each column */
