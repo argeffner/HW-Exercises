@@ -41,6 +41,7 @@ let board = []; // array of rows, each row is array of cells  (board[y][x])
 /** makeBoard: create in-JS board structure:
  *    board = array of rows, each row is array of cells  (board[y][x])
  */
+let gameIsRunning = true;
 
 function makeBoard() {
   for (let y = 0;  y < HEIGHT; y++) {
@@ -118,6 +119,7 @@ function placeInTable(y, x) {
 /** endGame: announce game end */
 
 function endGame(msg) {
+  gameIsRunning = false;
   setTimeout(function () {
     alert(msg);
 },1000);
@@ -127,6 +129,8 @@ function endGame(msg) {
 /** handleClick: handle click of column top to play piece */
 
 function handleClick(evt) {
+  if(gameIsRunning === false)
+  return;
   // get x from ID of clicked cell
   var x = +evt.target.id;
 
