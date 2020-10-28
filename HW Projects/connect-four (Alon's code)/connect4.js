@@ -81,14 +81,14 @@ function makeHtmlBoard() {
 }
 
 //Deleting all elements to reset game
-function deleteTime() { 
-  let e = document.querySelectorAll("td");  
-  let child = e.lastElementChild;  
-        while (child) { 
-          first.remove(); 
-          first = e.firstElementChild; 
-  } 
-} //code is not working and not sure why
+// function deleteTime() { 
+//   let e = document.querySelectorAll("td");  
+//   let child = e.lastElementChild;  
+//         while (child) { 
+//           first.remove(); 
+//           first = e.firstElementChild; 
+//   } 
+// } //code is not working and not sure why
 
 /** findSpotForCol: given column x, return top empty y (null if filled) */
 
