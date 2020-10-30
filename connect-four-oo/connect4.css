@@ -4,7 +4,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-image: url("https://cdnb.artstation.com/p/assets/images/images/028/853/683/large/nicholas-cole-jordan-flgtz-rickmorty-panorama-watermarked.jpg?1595716690");
+	background-image: url("https://mmre.xyz/media/photos/2018/12/26/fortifiedhouse.png");
   background-repeat: no-repeat;
   flex-direction: column;
   background-size: cover;
@@ -36,18 +36,8 @@ body {
      height: 100%;
    }
 
-.piece.p1 {
-  background-size: 125px;
-  background-position: center;
-}
-
-.piece.p2 {
-  background-size: 125px;
-  background-position: center;
-}
 
 /* column-top is table row of clickable areas for each column */
-
 #column-top td {
   border: dashed 1px lightgray;
 }
@@ -59,6 +49,20 @@ body {
   background-repeat: no-repeat;
 }
 #btn {
+  box-shadow: 1px 6px 1px #2b638f, 0px 3px 15px rgba(27, 218, 10, 0.4);
+  border-radius: 10%;
+  font-size: 20px;
+  font-weight: bold;
   color: darkorange;
   background-color: aqua;
   }
+
+#start-game {
+  border-radius: 45%;
+  background-image: url("https://i.pinimg.com/564x/5d/f3/0c/5df30c00d1de2e211532334a01089f6c.jpg");
+  color: blueviolet;
+  text-shadow: 0px 0px 4px white;
+  background-size: 125px;
+  background-position: center;
+  padding: 70px 25px;
+}  
