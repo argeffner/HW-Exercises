@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+  flex-direction: column;
+  background-size: cover;
+  z-index:-1;
+  background-color: blue;
+  transition: background-color 3000ms;
+}
+
+#jeopardy {
+  text-align: center;
+  font-size: 9pt;
+  background-color: purple;
+  color: white;
+  border-collapse: collapse;
+}
+
+#jeopardy th, #jeopardy td {
+  border: solid 1px teal;
+  width: 12em;
+  padding: 1em;
+}
+
+th {
+  color: gold;
+  text-transform: capitalize;
+  font-weight: bold;
+  height: 4em;
+  text-shadow: black 1px 1px;
+}
+
+td {
+  height: 9em;
+}
+
+td:hover {
+  cursor: pointer;
+}
