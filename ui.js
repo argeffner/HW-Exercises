@@ -133,7 +133,7 @@ $(async function() {
       // if the item is already favorited
       if ($tgt.hasClass("fas")) {
         // remove the favorite from the user's list
-        await currentUser.removeFavorite(storyId);
+        await currentUser.deleteFavorite(storyId);
         // then change the class to be an empty star
         $tgt.closest("i").toggleClass("fas far");
       } else {
@@ -223,7 +223,7 @@ $(async function() {
     const storyId = $closestLi.attr("id");
 
     // remove the story from the API
-    await storyList.removeStory(currentUser, storyId);
+    await storyList.deleteStory(currentUser, storyId);
 
     // re-generate the story list
     await generateStories();

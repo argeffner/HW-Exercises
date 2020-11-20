@@ -52,7 +52,7 @@ class StoryList {
       url: `${BASE_URL}/stories`,
       data: {
         story: newStory,
-        Token: user.loginToken, // loginToken is found in the user class below
+        token: user.loginToken, // loginToken is found in the user class below
       }
     });
     //need to make a new story
@@ -74,7 +74,7 @@ class StoryList {
       method: 'DELETE',
       url: `${BASE_URL}/stories/${storyId}`,
       data: {
-        Token: user.loginToken, // loginToken is found in the user class below
+        token: user.loginToken, // loginToken is found in the user class below
       }
     });
    
@@ -145,6 +145,9 @@ class User {
       }
     });
 
+    if(!response.data || !response.data.user)
+      throw new Error ('No user structure being passed')
+      
     // build a new User instance from the API response
     const existingUser = new User(response.data.user);
 
@@ -226,19 +229,20 @@ class User {
     return this;
   }
   //make changes to API (PATCH request) for changing/updating user
-  async update(userData){
-    const response = await axios({
-      url: `${BASE_URL}/users/${this.username}`,
-        method: "PATCH",
-        data: {
-          user: userData,
-          token: this.loginToken
-        }
-    });
-    // update the property "name"
-    this.name = response.data.user.name;
-    return this;
-  }
+  // async update(userData){
+  //   const response = await axios({
+  //     url: `${BASE_URL}/users/${this.username}`,
+  //       method: "PATCH",
+  //       data: {
+  //         user: userData,
+  //         token: this.loginToken
+  //       }
+  //   });
+  //   // update the property "name"
+  //   this.name = response.data.user.name;
+  //   return this;
+  // }
+
   // delete request to API for removing the user
   async delete() {
     await axios({
