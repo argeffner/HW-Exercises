@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+    {% block title %} Madlibs: story-choice {% endblock %}
+    {% block content %}
+    <h1> Choose a Story</h1>
+   <form action="/fill">
+    <select name="story_id">
+        {% for story in stories %}
+          <option value="{{ story.code }}">
+              {{ story.title }}
+          </option>
+        {% endfor %}
+    </select>
+    <button>Start</button>
+   </form> 
+   {% endblock %}

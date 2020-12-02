@@ -1,0 +1,46 @@
+.navbar {
+    background-color: teal;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+h1 {
+    position: relative;
+    color: purple;
+    left: 5px;
+}
+
+body {
+    
+    padding: 0;
+    margin: 0;
+    background-color: tan;
+}
+
+.navbar a:hover {
+    background-color: gray;
+    color: white;
+}
+
+#content {
+    margin: 1px;
+    
+    
+}
+
+form {
+    position: relative;
+    left: 10px;
+}
+
+p {
+    position: relative;
+    font-size: 20px;
+    left: 10px; 
+}

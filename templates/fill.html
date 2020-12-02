@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+    {% block title%} Madlibs: fillup {% endblock%}
+    {% block content%}
+    <h1>fill up {{ title }}</h1>
+    <form action="/story">
+      {% for prompt in prompts %}
+        <p>{{ prompt }}:
+          <input name="{{ prompt }}" id="content">
+        </p>
+      {% endfor %}
+      <input type="hidden" name="story_id" value="{{ story_id }}">
+      <button>story time</button>
+    </form>
+    {% endblock %}
