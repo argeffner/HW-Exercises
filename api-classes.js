@@ -60,7 +60,7 @@ class StoryList {
     //story added to top of list
     this.stories.unshift(newStory);
     // and add to user list
-    this.ownStories.unshift(newStory);
+    user.ownStories.unshift(newStory);
 
     return newStory;
   }
@@ -118,7 +118,7 @@ class User {
       user: {
         username,
         password,
-        name
+        name,
       }
     });
 
@@ -141,7 +141,7 @@ class User {
     const response = await axios.post(`${BASE_URL}/login`, {
       user: {
         username,
-        password
+        password,
       }
     });
 
