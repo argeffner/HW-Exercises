@@ -1,0 +1,38 @@
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+h1 {
+    text-align: center;
+    color: purple;
+}
+
+body {
+    
+    /* text-align: center; */
+    margin: auto;
+    background-color: tan;
+}
+
+.navbar a:hover {
+    background-color: gray;
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
