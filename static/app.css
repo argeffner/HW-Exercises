@@ -36,3 +36,13 @@ button {
     display: block;
 }
 
+select {text-align-last:center; }
+
+div {
+    text-align: center;
+}
+
+ul {
+    display: inline;
+    text-align: center;
+}
