@@ -1,0 +1,59 @@
+h1 {
+
+    color: purple;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+body {
+    
+    text-align: center;
+    margin: auto;
+    background-color: tan;
+    justify-content: center;
+}
+
+.board {
+    border: solid 1px black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 500%;
+    position: relative;
+    margin: 0 auto;
+    
+  }
+
+.board td {
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+}
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+ul {
+
+    display: inline;
+    list-style-type: none;
+}
+
+.msg {
+    padding: 1rem;
+    text-align: center;
+    background-clip: content-box;
+  }
+  
+.msg.ok {
+    background-color: green;
+  }
+  
+.msg.error {
+    background-color: red;
+  }
