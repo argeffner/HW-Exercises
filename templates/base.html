@@ -21,6 +21,9 @@
   </ul>
 </nav>
 <div class="container mt-5 container-fluid mb-2">
+  {% for msg in get_flashed_messages() %}
+  <div class="alert alert-info">{{ msg }}</div>
+  {% endfor %}
   {% block content %}
   
   {% endblock %}
