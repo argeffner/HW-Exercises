@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block title %} Phones {% endblock %}
+{% block content %}
+
+    
+    <h1 class='display-1'>These are our pets</h1>
+    <div class="row mt-4">
+    {% for pet in pets %}
+    <div class="col-3">
+        <img src="{{ pet.image() }}" class="img-thumbnail">
+        <a class="text-light" href="/{{pet.id}}">{{pet.name}}</a>
+        {% if pet.available %} 
+        <b> Our little buddy is still available </b>
+        {% endif %}
+    </div>
+    {% else %}
+    <div class="col-12 mb-4"> We don't have any pets for you, sorry.</div>
+    {% endfor %}
+    </div>
+    <a href="/add" class="btn btn-success">Add a Pet</a>
+
+{% endblock %}
