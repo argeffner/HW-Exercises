@@ -26,8 +26,8 @@ router.get('/:id', async function(req, res, next) {
       const icRes = await db.query(
         `SELECT invoices.id, invoices.amt, invoices.paid, invoices.add_date, invoices.paid_date,
          invoices.comp_code, companies.code, companies.name, companies.description 
-         FROM invoices INNER JOIN companies ON invoices.comp_code = companies.code;
-        FROM invoices WHERE id=$1`, [id]);
+         FROM invoices INNER JOIN companies ON invoices.comp_code = companies.code
+         FROM invoices WHERE id=$1`, [id]);
       
       if (icRes.rows.length === 0) {
             throw new ExpressError(`invoice doesn't exist: ${id}`, 404);
@@ -54,13 +54,13 @@ router.get('/:id', async function(req, res, next) {
 })
 
 // POST invoices/id => {invoice: {id, comp_code, amt, paid, add_date, paid_date}}
-router.post("/id", async function(req, res, next) {
+router.post("/", async function(req, res, next) {
     try {
         // Needs to be passed in JSON body of: {comp_code, amt}
-        const {comp_code, amt} = res.body;
+        const {comp_code, amt} = req.body;
 
         const result = await db.query(
-            `INSERT INTO (comp_code, amt)
+            `INSERT INTO invoices (comp_code, amt)
              VALUES ($1, $2)
              RETURNING comp_code, amt`, 
              [comp_code, amt] );

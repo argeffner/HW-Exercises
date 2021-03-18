@@ -6,7 +6,8 @@ DROP TABLE IF EXISTS companies;
 CREATE TABLE companies (
     code text PRIMARY KEY,
     name text NOT NULL UNIQUE,
-    description text
+    description text,
+    -- i text NOT NULL
 );
 
 CREATE TABLE invoices (
@@ -19,6 +20,14 @@ CREATE TABLE invoices (
     CONSTRAINT invoices_amt_check CHECK ((amt > (0)::double precision))
 );
 
+CREATE TABLE industries (
+    i_code text PRIMARY KEY,
+    i_type text NOT NULL,
+    comp_code text NOT NULL REFERENCES companies ON DELETE CASCADE
+);
+
+
+
 INSERT INTO companies
   VALUES ('apple', 'Apple Computer', 'Maker of OSX.'),
          ('ibm', 'IBM', 'Big blue.');
@@ -28,3 +37,14 @@ INSERT INTO invoices (comp_Code, amt, paid, paid_date)
          ('apple', 200, false, null),
          ('apple', 300, true, '2018-01-01'),
          ('ibm', 400, false, null);
+
+INSERT INTO industries 
+VALUES ('tech', 'technology', 'apple'),
+       ('chc', 'computer-hardware', 'ibm');
+
+
+CREATE TABLE ind_comp AS (
+SELECT  code, name, i_code, i_type, description
+FROM industries INNER JOIN companies
+ON industries.comp_code = companies.code
+FROM industries WHERE i_code=$1`, [i_code]);
