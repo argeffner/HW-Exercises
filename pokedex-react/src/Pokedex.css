@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(235, 221, 221);
+}
+.Pokedex {
+    background-color: rgb(235, 221, 221);
+    text-align: center;
+    font-weight: bold;
+}
+
+.dex-title {
+    color: rgb(195, 98, 98);
+    font-weight: bold;
+    
+}
+
+.dex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dex-win {
+    color: blue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+}

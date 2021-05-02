@@ -1,0 +1,28 @@
+.Pokecard {
+    background-color: rgb(160, 153, 153);
+    border-radius: 15px;
+    width: 6rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.poke-title {
+    text-align: center;
+    color: blue
+}
+
+.poke-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.poke-type {
+    text-align: center;
+}
+.poke-exp {
+    text-align: center;
+}
