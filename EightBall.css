@@ -1,0 +1,33 @@
+.Eightball {
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 50px;
+  box-shadow: 5px 10px 20px rgb(76, 88, 99);
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+.orange {
+  color: orange;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+
