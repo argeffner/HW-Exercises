@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Coin"
+  >
+    <h2
+      class="Coin-title"
+    >
+      Heads or Tails?
+    </h2>
+    <br />
+    <button>
+      Flip
+    </button>
+    <p>
+      Out of 0 flips, there have been 0 heads and 0 tails.
+    </p>
+  </div>
+</DocumentFragment>
+`;
